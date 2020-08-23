@@ -1,0 +1,2 @@
+# gocode
+ my go learning
