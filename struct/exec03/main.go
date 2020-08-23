@@ -86,13 +86,16 @@ func main() {
 	} 
 	var bussnessType int
 	var ifGoOn string
-	busschoice:
-	fmt.Println("请选择你要办理的业务并输入对应业务代码")
-	fmt.Printf("1:查询；\n2:存款；\n3:取款\n")
-	fmt.Scanln(&bussnessType)
+	//busschoice:
+	// fmt.Println("请选择你要办理的业务并输入对应业务代码")
+	// fmt.Printf("1:查询；\n2:存款；\n3:取款\n")
+	// fmt.Scanln(&bussnessType)
 	
 	
 	for {
+		fmt.Println("请选择你要办理的业务并输入对应业务代码")
+		fmt.Printf("1:查询；\n2:存款；\n3:取款\n")
+		fmt.Scanln(&bussnessType)
 		if bussnessType == 1 {
 			myBussness.queryMoney()
 		}else if bussnessType == 2 {
@@ -108,9 +111,9 @@ func main() {
 		fmt.Scanln(&ifGoOn)
 		if ifGoOn == "no"{
 			break
-		}else{
-			goto busschoice
-		}
+		}//else{
+		//	goto busschoice
+		//}
 	}
 	
 }
